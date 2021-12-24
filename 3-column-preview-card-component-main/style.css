@@ -27,6 +27,10 @@ body {
     color: #fff;
 }
 
+img {
+    margin-top: 30px;
+}
+
 p {
     font-size: 15px;
 }
@@ -55,6 +59,18 @@ p {
     border-radius: 0 0 10px 10px;
 }
 
+.btn-1 {
+    color: var(--bright-orange);
+}
+
+.btn-2 {
+    color: var(--dark-cyan);
+}
+
+.btn-3 {
+    color: var(--very-dark-cyan);
+}
+
 .btn{
     font-family: 'Lexend Deca', sans-serif;
     font-size: 15px;
@@ -63,15 +79,45 @@ p {
     border: 2px solid #fff;
     padding: 10px 20px;
     margin: 40px 0 20px;
+    transition: all 0.4s ease-in-out;
 }
 
 .btn:hover {
     cursor: pointer;
     background-color: transparent;
     border-radius: 2px #fff solid;
+    color: #fff;
 }
 
-.container > .btn:nth-child(1) {
-    color: var(--bright-orange);
-    border: none;
+@media screen and (min-width: 1010px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        height: 570px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    img {
+        margin-bottom: 30px;
+    }
+
+    p {
+        margin-bottom: 60px;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    .container > .card:nth-child(1) {
+        border-radius: 10px 0 0 10px;
+    }
+    
+    .container > .card:nth-child(3) {
+        border-radius: 0 10px 10px 0;
+    }
 }
